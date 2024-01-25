@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+ {% block content %}
+
+<div class="card">
+    <div class="card-header">
+        <div class="Card-title">
+             <h1>Task update</h1>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+             <input type="submit">
+
+ </form> 
+ 
+        </div>
+    </div>
+</div>
+
+<!-- <form method="POST">-->
+<!--   {% csrf_token %}-->
+<!--   {{f.as_p}}-->
+<!--   <input type="submit">-->
+
+<!-- </form>-->
+
+ {% endblock %}
